@@ -1,0 +1,49 @@
+/* Estilos generales */
+.seccion {
+    width: 100%; /* Hacer que la sección ocupe el 100% del ancho disponible */
+    max-width: 400px; /* Limitar el ancho máximo */
+    border: 1px solid black;
+    height: 600px;
+    border-radius: 10px;
+    margin: 0 auto; /* Centrar la sección */
+    gap: 20rem;
+    padding: 10px;
+}
+
+.header {
+    width: 100%; /* Ajustar el ancho al 100% del contenedor padre */
+    max-width: 375px; /* Limitar el ancho máximo */
+    border: 1px solid black;
+    padding: 1rem;
+    gap: 10rem;
+    align-items: center;
+}
+
+.img-header {
+    width: 100%; /* Asegurarse de que la imagen se ajuste al 100% del contenedor */
+    max-width: 150px; /* Limitar el ancho máximo */
+    height: auto; /* Mantener proporción de la imagen */
+    gap: 40px;
+    
+}
+
+.texto {
+    justify-content: right;
+}
+
+
+@media (max-width: 375px) {
+    .seccion {
+        width: 100%;
+        height: auto; 
+    }
+
+    .header {
+        max-width: 100%; /
+    }
+
+    .img-header {
+        max-width: 100%; /* La imagen también ocupará todo el ancho */
+        height: auto; /* Ajustar la altura para mantener la proporción */
+    }
+}
